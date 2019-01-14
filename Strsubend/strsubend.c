@@ -26,13 +26,13 @@ int main(void) {
 	char str1[NEL], str2[NEL], str3[NEL];
 	
 	printf("Inserisci la prima stringa --->  ");
-	scanf("%NELs", str1);
+	scanf("%s", str1);
 	
 	printf("Inserisci la seconda stringa --->  ");
-	scanf("%NELs", str2);
+	scanf("%s", str2);
 	
 	printf("Inserisci la terza stringa --->  ");
-	scanf("%NELs", str3);
+	scanf("%s", str3);
 
 	if(strsubend(str1, str2, str3)) {
 		printf("%s\n", str1);
@@ -56,10 +56,10 @@ int lenght(char *stringa) {
 }
 
 int sameLenght(int len1, int len2) {
-	return (len1 == len2)? 1 : 0;
+	return (len1 == len2);
 }
 
-int stringCompare(char *s, char *t, int nlett) {
+int stringCompare(char *s, char *t) {
 	char *str1 = s, *str2 = t;
 	
 	str1 = str1 + (lenght(str1) - lenght(str2)) + 1;  
@@ -72,7 +72,7 @@ int stringCompare(char *s, char *t, int nlett) {
 		str2++;
 	}
 	
-	return (*str1 == '\0' && *str2 == '\0')? 1 : 0;
+	return (*str1 == '\0' && *str2 == '\0');
 }
 
 int strsubend (char *s, char *t, char *r) {
