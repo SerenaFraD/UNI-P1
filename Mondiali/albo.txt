@@ -1,0 +1,24 @@
+Brasile	        5	2	2	2
+Germania	4	4	4	1
+Italia	        4	2	1	1
+Argentina	2	3	-       -
+Francia	        2	1	2	1
+Uruguay	        2	-	-	3
+Inghilterra	1	-	-	2
+Spagna	        1       -	-	1
+Paesi Bassi	-	3	1	1
+Ungheria	-	2	-	-
+Cecoslovacchia	-	2	-	-
+Svezia		-       1	2	1 
+Croazia		-       1	1	-
+Polonia		-	-       2	-
+Austria		-	-       1	1
+Portogallo	-	-	1	1
+Belgio		-       -	1	1
+Stati Uniti	-	-	1	-
+Cile		-       -	1	-
+Turchia		-       -	1	-
+Jugoslavia	-	-	-	2
+URSS		-	-       -	1
+Bulgaria	-	-	-	1
+Corea del Sud	-	-	-	1
