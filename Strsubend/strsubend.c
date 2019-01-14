@@ -62,7 +62,7 @@ int sameLenght(int len1, int len2) {
 int stringCompare(char *s, char *t) {
 	char *str1 = s, *str2 = t;
 	
-	str1 = str1 + (lenght(str1) - lenght(str2)) + 1;  
+	str1 = str1 + lenght(str1) - lenght(str2) + 1;  
 	
 	while(*str1 != '\0' && *str2 != '\0') {
 		if(*str1 != *str2) {
