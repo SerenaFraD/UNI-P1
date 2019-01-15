@@ -1,0 +1,20 @@
+1 Everest : 8848 m Cina, Nepal
+2 K2 : 8611 m Cina, Pakistan
+3 Kangchenjunga: 8586 m India, Nepal
+4 Lhotse: 8516 m Cina, Nepal
+5 Makalu: 8463 m Cina, Nepal
+6 Cho Oyu: 8201 m Cina, Nepal
+7 Dhaulagiri I: 8167 m Nepal
+8 Manaslu: 8163 m Nepal
+9 Nanga Parbat: 8125 m Pakistan 
+10 Annapurna I: 8091 m Nepal
+11 Gasherbrum I: 8068 m Cina, Pakistan 
+12 Broad Peak:  8047 m Cina, Pakistan 
+13 Gasherbrum II: 8035 m Cina, Pakistan 
+14 Shisha Pangma: 8027 m Cina
+15 Gasherbrum III: 7952 m Cina, Pakistan 
+16 Gyachung Kang: 7952 m Cina, Nepal 
+17 Annapurna II: 7937 m Nepal 
+18 Gasherbrum IV: 7925 m Cina, Pakistan 
+19 Himalchuli: 7893 m Nepal 
+20 Disteghil Sar: 7885 m Pakistan 
