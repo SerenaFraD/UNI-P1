@@ -2,9 +2,9 @@
 #include<string.h>
 #include<stdlib.h>
 #define NCHAR 100
-#define NNAME	30
-#define FILE_NAME "albo.txt"
+#define NNAME 30
 #define DIM 5
+#define FILE_NAME "albo.txt"
 
 void mondiali(char *parametri[], int nPar);
 
