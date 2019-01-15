@@ -10,7 +10,7 @@ void mondiali(char *parametri[], int nPar);
 
 int main(int argc, char *argv[]) {
 
-	if(argc < 2 && argc > 3) {
+	if(argc < 2 || argc > 3) {
 		fprintf(stderr, "Passaggio errato dei parametri.\n");
 		printf("Uso: ./mon <'Nome nazione'>\n");
 		printf("Uso: ./mon <max> {<oro>, <argento>, <bronzo>, <totale>}\n");
@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
 }
 
 void mondiali(char *parametri[], int nPar) {
-	char riga[NCHAR], nnation[NNAME], oro[DIM], argento[DIM], bronzo[DIM], totale[DIM], maxNat[NNAME];
+	char riga[NCHAR], nation[NNAME], maxNat[NNAME], oro[DIM], argento[DIM], bronzo[DIM], totale[DIM];
 	FILE *fp;
 	int somma = 0, tmp, max = -1000, pos = 0;
 	short int isMax = 0, isNation = 0, isGold = 0, isSilver = 0, isBronze = 0, isTotal = 0;
@@ -35,8 +35,7 @@ void mondiali(char *parametri[], int nPar) {
 	
 	if(strncmp(parametri[1], "max", 3) == 0) {
 		isMax = 1;
-		//printf("isMax\n");
-	
+		
 		if(strcmp(parametri[2], "oro") == 0) {
 			isGold = 1;
 		} else if(strcmp(parametri[2], "argento") == 0) {
@@ -49,8 +48,7 @@ void mondiali(char *parametri[], int nPar) {
 	}
 	
 	while(fgets(riga, sizeof(riga), fp)) {
-		sscanf(riga, "%[^0123456789-] %s %s %s %s", nnation, oro, argento, bronzo, totale);
-		//printf("%s %s %s %s %s\n", nnation, oro, argento, bronzo, totale);
+		sscanf(riga, "%[^0123456789-] %s %s %s %s", nation, oro, argento, bronzo, totale);
 		
 		if(isMax) {
 			if(isGold){
@@ -64,10 +62,10 @@ void mondiali(char *parametri[], int nPar) {
 			}
 			if(max < tmp) {
 				max = tmp;
-				strcpy(maxNat, nnation);
+				strcpy(maxNat, nation);
 			}
 		} else {
-			if(strncmp(parametri[1], nnation, strlen(parametri[1])) == 0) {
+			if(strncmp(parametri[1], nation, strlen(parametri[1])) == 0) {
 				isNation = 1;
 				break;
 			}		
@@ -77,7 +75,7 @@ void mondiali(char *parametri[], int nPar) {
 	if(isMax) {
 		printf("%s %d\n", maxNat, max);
 	} else if(isNation) {
-		printf("%s %s %s %s %s %d\n", nnation, ((strncmp(oro, "-", 2) == 0)? "0" : oro), argento, bronzo, totale, (atoi(oro) + atoi(argento) + atoi(bronzo)));
+		printf("%s %s %s %s %s %d\n", nation, ((strncmp(oro, "-", 2) == 0)? "0" : oro), argento, bronzo, totale, (atoi(oro) + atoi(argento) + atoi(bronzo)));
 	} else {
 		printf("Errore nell'immissione dei dati.\n");
 	}
