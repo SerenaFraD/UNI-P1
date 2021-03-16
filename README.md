@@ -1,2 +1,2 @@
 # EserciziProgrammazione
-Raccolta di esercizi del Corso di Programmazione 1 del primo semestre
+Esercizi del corso di Programmazione 1 relativi al Corso di Laurea in Informatica presso UNISA
